@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var book = require('./routes/book');
+//var book = require('./routes/book');
 //设置模板文件的目录
 app.set('views', './views')
 //设置模板引擎
@@ -8,11 +8,11 @@ app.set('view engine', 'jade');
 //使用静态资源
 app.use(express.static('public'));
 //图书路由页面
-app.use('/book',book);
+//app.use('/book',book);
 
 //主页
 app.get('/', function (req, res) {
-   res.render('index', { title: 'Hey', message: 'Hello there!'});
+   res.render('layout', { title: 'Hey', message: 'Hello there!'});
 });
 //错误处理
 app.use(function(err, req, res, next) {
