@@ -1,0 +1,19 @@
+{
+  "name": "books",
+  "version": "1.0.0",
+  "description": "图书网站",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.16.3",
+    "jade": "^1.11.0",
+    "moment": "^2.22.2",
+    "mongoose": "^5.2.13",
+    "underscore": "^1.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "booktest"
+  },
+  "author": "pengqiangsheng",
+  "license": "ISC"
+}
