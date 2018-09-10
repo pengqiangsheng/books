@@ -1,0 +1,31 @@
+body {
+
+	font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+.bs-docs-header {
+
+	margin-bottom: 40px;
+    font-size: 20px;
+    position: relative;
+    padding: 30px 0;
+    color: #cdbfe3;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(0,0,0,.1);
+    background-color: #6f5499;
+}
+
+.bs-docs-header h1 {
+    margin-top: 0;
+    color: #fff;
+}
+
+.bs-docs-header p {
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.col-ma-15 {
+    margin-bottom: 15px;
+}
