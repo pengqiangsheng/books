@@ -26,7 +26,7 @@
 9月14日：更新mongodb模式模型设计和编码
 
 ┌--Schema---┑    
-┝--Model  --┥ ➯ Mongoose ➯ Mongodb
+┝--Model----┥ ➯ Mongoose ➯ Mongodb</br>
 ┕--Document-┘
 
 注意：需要本地有mongodb数据库，才能运行程序。
