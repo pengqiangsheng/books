@@ -4,10 +4,10 @@ block content
 	.container
 		.row
 			each item in books
-				.col-md-2
+				.col-md-2.col-sm-4.col-xs-12
 					.thumbnail
 						a(href="/admin/book/#{item._id}")
-							img(src="#{item.poster}",alt="#{item.title}" height="200px",width="100%", display="block")
+							img(src="#{item.poster}",alt="#{item.title}" height="",width="100%", display="block")
 						.caption
 							h3 #{item.title}
 							p: a.btn.btn-primary(href="/admin/book/#{item._id}",role="button") 查看书籍信息

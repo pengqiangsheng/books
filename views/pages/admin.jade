@@ -12,7 +12,6 @@ block content
 				label.col-sm-2.control-label(for="inputAuthor") 书籍作者
 				.col-sm-10
 					input#inputAuthor.form-control(type="text", name="book[author]", value="#{book.author}")
-
 			.col-sm-12.col-ma-15
 				label.col-sm-2.control-label(for="inputCountry") 国家
 				.col-sm-10
@@ -29,6 +28,10 @@ block content
 				label.col-sm-2.control-label(for="inputSummary") 简介
 				.col-sm-10
 					input#inputSummary.form-control(type="text", name="book[summary]", value="#{book.summary}")
+			.col-sm-12.col-ma-15
+				label.col-sm-2.control-label(for="inputPoster") 图片地址
+				.col-sm-10
+					input#inputPoster.form-control(type="text", name="book[poster]", value="#{book.poster}")
 			.col-sm-12.col-ma-15
 				.col-sm-offset-2.col-sm-10
 					button.btn.btn-default(type="submit") 录入

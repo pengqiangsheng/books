@@ -29,3 +29,31 @@ body {
 .col-ma-15 {
     margin-bottom: 15px;
 }
+
+
+bg-my-pul {
+    background-color: #6f5499;
+}
+
+.dl-horizontal dt {
+
+    width: 100px;
+}
+
+.dl-horizontal dd {
+    margin-left: 120px;
+}
+
+dd, dt {
+    line-height: 2;
+    
+}
+
+.panel {
+    padding: 0 10px 0 10px ; 
+}
+
+dd:hover {
+    color: white;
+    background-color: #6f5499;
+}

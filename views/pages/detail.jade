@@ -3,19 +3,19 @@ extends ../layout
 block content
 	.container
 		.row
-			.col-md-7
-				img(src="#{book.poster}",alt="#{book.title}",height="200px",width="200px")
-			.col-md-5
+			.col-md-3
+				img(src="#{book.poster}",alt="#{book.title}",height="300px")
+			.col-md-9
 				dl.dl-horizontal
 					dt 书籍名称
-					dd= book.title
+					dd.panel.panel-info= book.title
 					dt 书籍作者
-					dd= book.author
+					dd.panel.panel-info= book.author
 					dt 国家
-					dd= book.country
+					dd.panel.panel-info= book.country
 					dt 语言
-					dd= book.language
+					dd.panel.panel-info= book.language
 					dt 发布时间
-					dd= book.year
+					dd.panel.panel-info= book.year
 					dt 简介
-					dd= book.summary
+					dd.panel.panel-info= book.summary
