@@ -13,14 +13,15 @@ block content
 						th 查看
 						th 更新
 						th 删除
-					tbody
-						each item in books
-							tr(class="item-id-#{item._id}")
-								td #{item.title}
-								td #{item.author}	
-								td #{item.country}
-								td #{moment(item.meta.CreateAt).format('MM/DD/YYYY')}	
-								td: a(target="_blank",href="../admin/book/#{item._id}") 查看
-								td: a(target="_blank",href="../admin/update/#{item._id}") 修改
-								td
-									button.btn.btn-danger.del(type="button", data-id="#{item._id}") 删除 					
+				tbody
+					each item in books
+						tr(class="item-id-#{item._id}")
+							td #{item.title}
+							td #{item.author}	
+							td #{item.country}
+							td #{moment(item.meta.creatAt).format('MM/DD/YYYY')}	
+							td: a(target="_blank",href="../admin/book/#{item._id}") 查看
+							td: a(target="_blank",href="../admin/update/#{item._id}") 修改
+							td
+								button.btn.btn-danger.del(type="button", data-id="#{item._id}") 删除
+	script(src="/js/admin.js")

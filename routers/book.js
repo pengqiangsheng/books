@@ -42,6 +42,23 @@ router.get('/list', function (req, res) {
 	})*/
 });
 
+//删除功能
+router.delete('/list', function(req, res) {
+   console.log('删除动作...')
+   var id = req.query.id
+
+   if(id) {
+      Book.remove({_id: id}, function(err, book) {
+         if(err) {
+            console.log(err)
+         }else {
+            res.json({success: 1})
+         }
+      })
+   }
+   
+})
+
 router.get('/book', function (req, res) { 
    console.log('后台录入页面');
    res.render('admin', { 
