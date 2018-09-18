@@ -38,6 +38,18 @@ app.get('/', function (req, res) {
   })
 })
 
+//详情页面
+app.get('/book/:id', function (req, res) {
+   console.log('详情页');
+
+   var id = req.params.id
+   Book.findById(id,function(err, book) {
+      res.render('detail', {
+         title: '详情页',
+         book: book
+      })
+   })
+})
 
 //错误处理
 app.use(function(err, req, res, next) {

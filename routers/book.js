@@ -85,18 +85,6 @@ router.get('/update/:id', function (req,res) {
    }	
 })
 
-//详情页面
-router.get('/book/:id', function (req, res) {
-   console.log('详情页');
-
-   var id = req.params.id
-   Book.findById(id,function(err, book) {
-      res.render('detail', {
-         title: '详情页',
-         book: book
-      })
-   })
-})
 
 //新增页面
 router.post('/book/new', function (req, res) {
@@ -121,7 +109,7 @@ router.post('/book/new', function (req, res) {
                console.log(err)
             }
 
-            res.redirect('/admin/book/' + book._id)
+            res.redirect('/book/' + book._id)
          })
          
       })
@@ -143,7 +131,7 @@ router.post('/book/new', function (req, res) {
             console.log(err)
          }
 
-         res.redirect('/admin/book/' + book._id)
+         res.redirect('/book/' + book._id)
       })
    }
 })
