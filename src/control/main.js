@@ -12,6 +12,15 @@ module.exports = function(app) {
     app.use(function(req, res, next) {
         var _user = req.session.user
         app.locals.user = _user
+        if(_user){
+            console.log('1111111111111111111')
+            if (_user.name === 'root') {
+                console.log('222222222222222222')
+                app.locals.root = 'root'
+            }
+        }else {
+            console.log('3333333333333333')
+        }
         next()
     })
 
@@ -39,7 +48,7 @@ module.exports = function(app) {
     app.get('/logout', function(req, res) {
         delete req.session.user
         delete app.locals.user
-
+        delete app.locals.root
         res.redirect('/')
     })
 
