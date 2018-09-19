@@ -1,0 +1,21 @@
+extends ../layout
+
+block content
+	.container
+		.row
+			.col-md-3
+				img(src="#{book.poster}",alt="#{book.title}",height="300px")
+			.col-md-9
+				dl.dl-horizontal
+					dt 书籍名称
+					dd.panel.panel-info= book.title
+					dt 书籍作者
+					dd.panel.panel-info= book.author
+					dt 国家
+					dd.panel.panel-info= book.country
+					dt 语言
+					dd.panel.panel-info= book.language
+					dt 发布时间
+					dd.panel.panel-info= book.year
+					dt 简介
+					dd.panel.panel-info= book.summary
